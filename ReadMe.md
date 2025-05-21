@@ -30,7 +30,7 @@ $ scram b -j 8
 # Running the code:
 
 ```bash
-$ cd CMSSW_12_0_0_pre4/src
+$ cd CMSSW_12_6_0/src
 
 $ scram b clean
 
