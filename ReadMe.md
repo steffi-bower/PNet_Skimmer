@@ -36,7 +36,7 @@ $ scram b clean
 
 $ scram b -j8
 
-$ cd /test/
+$ cd test/
 
 $ cmsRun rerunTauRecoOnMiniAOD_WithClean_Custom.py
 ```
