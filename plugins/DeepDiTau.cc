@@ -6,7 +6,7 @@
  * \author Devin Taylor, UC Davis
  */
 
-#include "BoostedDiTau/MiniAODSkimmer/interface/DeepDiTau.h"
+#include "PNet_Skimmer/interface/DeepDiTau.h"
 #include <fstream>
 #include <sstream>
 

@@ -22,8 +22,8 @@
 
 #include "DataFormats/PatCandidates/interface/Jet.h"
 
-#include "BoostedDiTau/MiniAODSkimmer/interface/DeepDiTau.h"
-#include "BoostedDiTau/MiniAODSkimmer/interface/DeepCache.h"
+#include "PNet_Skimmer/interface/DeepDiTau.h"
+#include "PNet_Skimmer/interface/DeepCache.h"
 #include "DataFormats/Common/interface/ValueMap.h"
 
 class DeepDiTauProducer : public edm::stream::EDProducer<edm::GlobalCache<DeepCache> > {

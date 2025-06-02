@@ -12,16 +12,17 @@ $ cmsrel CMSSW_12_6_0
 
 $ cd CMSSW_12_6_0/src
 
-$ git cms-init
-
 $ cmsenv
 
-$ git clone --recursive git@github.com:red1habibullah/MiniAODSkimmer.git -b UL_12X_2018
+$ git cms-init
+
+$ git clone --recursive  https://github.com/steffi-bower/PNet_Skimmer.git
 
 $ git cms-addpkg PhysicsTools/PatAlgos
 
 $ rm PhysicsTools/PatAlgos/plugins/PATTauSlimmer.cc ##Replace with my own writen by redwan
 
+$ mv PNetSkimmer/PATTauSlimmer.cc PhysicsTools/PatAlgos/plugins/
 
 $ scram b -j 8
 ```
@@ -34,7 +35,7 @@ $ cd CMSSW_12_6_0/src
 
 $ scram b clean
 
-$ scram b -j8
+$ scram b -j 8
 
 $ cd test/
 

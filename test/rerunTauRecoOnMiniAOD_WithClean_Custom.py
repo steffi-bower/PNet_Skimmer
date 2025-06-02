@@ -27,8 +27,8 @@ for line in infiles:
     fileVec.append("file:"+location+"/"+line)
     print ("file:"+location+"/"+line)
 #inputfile ='file:/eos/uscms/store/user/nbower/Events/2018_SUSYGluGluToHToAA_AToBB_AToTauTau_M-12_FilterTauTauTrigger_TuneCP5_13TeV_madgraph_pythia8_MINIAOD/FULL_HT//SUSYGluGluToHToAA_AToBB_AToTauTau_M-12_\FilterTauTauTrigger_TuneCP5_13TeV_madgraph_pythia8_MINIAOD_117.root' 
-#inputfile = 'file:SUSYGluGluToHToAA_AToBB_AToTauTau_M-12_FilterTauTauTrigger_TuneCP5_13TeV_madgraph_pythia8_MINIAOD_1.root'
-#fileVec = [inputfile]
+inputfile = 'file:SUSYGluGluToHToAA_AToBB_AToTauTau_M-12_FilterTauTauTrigger_TuneCP5_13TeV_madgraph_pythia8_MINIAOD_1.root'
+fileVec = [inputfile]
 #RunSignal = True
 runSignal=False
 ###########

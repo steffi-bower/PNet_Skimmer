@@ -171,23 +171,23 @@ def addTauReRecoCustom(process):
                 graphDefinitions = cms.VPSet(
                     cms.PSet(
                         name = cms.string('ditau2017v1'),
-                        path = cms.FileInPath('BoostedDiTau/MiniAODSkimmer/data/ditau_2017_v1.pb'),
-                        means = cms.FileInPath('BoostedDiTau/MiniAODSkimmer/data/ditau_2017_v1_means_sigmas.txt'),
+                        path = cms.FileInPath('PNet_Skimmer/data/ditau_2017_v1.pb'),
+                        means = cms.FileInPath('PNet_Skimmer/data/ditau_2017_v1_means_sigmas.txt'),
                     ),
                     cms.PSet(
                         name = cms.string('ditau2017MDv1'),
-                        path = cms.FileInPath('BoostedDiTau/MiniAODSkimmer/data/ditau_2017_md_v1.pb'),
-                        means = cms.FileInPath('BoostedDiTau/MiniAODSkimmer/data/ditau_2017_md_v1_means_sigmas.txt'),
+                        path = cms.FileInPath('PNet_Skimmer/data/ditau_2017_md_v1.pb'),
+                        means = cms.FileInPath('PNet_Skimmer/data/ditau_2017_md_v1_means_sigmas.txt'),
                     ),
                     cms.PSet(
                         name = cms.string('ditau2017v2'),
-                        path = cms.FileInPath('BoostedDiTau/MiniAODSkimmer/data/ditau_2017_v2.pb'),
-                        means = cms.FileInPath('BoostedDiTau/MiniAODSkimmer/data/ditau_2017_v2_means_sigmas.txt'),
+                        path = cms.FileInPath('PNet_Skimmer/data/ditau_2017_v2.pb'),
+                        means = cms.FileInPath('PNet_Skimmer/data/ditau_2017_v2_means_sigmas.txt'),
                     ),
                     cms.PSet(
                         name = cms.string('ditau2017MDv2'),
-                        path = cms.FileInPath('BoostedDiTau/MiniAODSkimmer/data/ditau_2017_md_v2.pb'),
-                        means = cms.FileInPath('BoostedDiTau/MiniAODSkimmer/data/ditau_2017_md_v2_means_sigmas.txt'),
+                        path = cms.FileInPath('PNet_Skimmer/data/ditau_2017_md_v2.pb'),
+                        means = cms.FileInPath('PNet_Skimmer/data/ditau_2017_md_v2_means_sigmas.txt'),
                 ),
             ),
         ),
@@ -205,8 +205,8 @@ def addTauReRecoCustom(process):
         src=cms.InputTag("slimmedJets"),
         vertices = cms.InputTag("offlineSlimmedPrimaryVertices"),
         secondaryVertices = cms.InputTag("slimmedSecondaryVertices"),
-        preprocess_json = cms.FileInPath("BoostedDiTau/MiniAODSkimmer/data/BestModel_2102_FullVariables_25Epoch_NoID.json"),
-        model_path = cms.FileInPath("BoostedDiTau/MiniAODSkimmer/data/BestModel_2102_FullVariables_25Epoch_NoID.onnx"),
+        preprocess_json = cms.FileInPath("PNet_Skimmer/data/BestModel_2102_FullVariables_25Epoch_NoID.json"),
+        model_path = cms.FileInPath("PNet_Skimmer/data/BestModel_2102_FullVariables_25Epoch_NoID.onnx"),
         TriggerResultsTag = cms.InputTag("TriggerResults","","HLT"),
         ditau2017v1 = cms.InputTag("DeepDiTauProducer","ditau2017v1"),
         ditau2017MDv1 = cms.InputTag("DeepDiTauProducer","ditau2017MDv1"),
@@ -757,7 +757,7 @@ def adaptTauToMiniAODReReco(process, runType, reclusterJets=True):
     _updatedTauNameElectronCleaned = 'selectedPatTausNewIDsElectronCleaned'
     _noUpdatedTauNameElectronCleaned = 'selectedPatTausNoNewIDsElectronCleaned'
     
-    import BoostedDiTau.MiniAODSkimmer.tools.runTauIdMVA_ElectronCleaned as tauIdConfigElectronCleaned
+    import PNet_Skimmer.tools.runTauIdMVA_ElectronCleaned as tauIdConfigElectronCleaned
     tauIdEmbedderElectronCleaned = tauIdConfigElectronCleaned.TauIDEmbedder(
         process, debug = False,
         updatedTauName = _updatedTauNameElectronCleaned,
@@ -788,7 +788,7 @@ def adaptTauToMiniAODReReco(process, runType, reclusterJets=True):
     _updatedTauNameMuonCleaned = 'selectedPatTausNewIDsMuonCleaned'
     _noUpdatedTauNameMuonCleaned = 'selectedPatTausNoNewIDsMuonCleaned'
     
-    import BoostedDiTau.MiniAODSkimmer.tools.runTauIdMVA_MuonCleaned as tauIdConfigMuonCleaned
+    import PNet_Skimmer.tools.runTauIdMVA_MuonCleaned as tauIdConfigMuonCleaned
     tauIdEmbedderMuonCleaned = tauIdConfigMuonCleaned.TauIDEmbedder(
         process, debug = False,
         updatedTauName = _updatedTauNameMuonCleaned,
@@ -942,7 +942,7 @@ def addTCPNtuples(process,runType):
                                         ElectronCollection = cms.InputTag("slimmedElectrons"),
                                         VertexCollection = cms.InputTag("offlineSlimmedPrimaryVertices"),
                                         rhoTag = cms.InputTag("fixedGridRhoFastjetAll"),
-                                        effAreasConfigFile = cms.FileInPath("BoostedDiTau/MiniAODSkimmer/data/effAreaElectrons_cone03_pfNeuHadronsAndPhotons_94X.txt"),
+                                        effAreasConfigFile = cms.FileInPath("PNet_Skimmer/data/effAreaElectrons_cone03_pfNeuHadronsAndPhotons_94X.txt"),
                                         UnCleanedTauCollection = cms.InputTag('slimmedTausUnCleaned'),
                                         ECleanedTauCollection = cms.InputTag('slimmedTausElectronCleaned'),
                                         MCleanedTauCollection = cms.InputTag('slimmedTausMuonCleaned'),
@@ -959,8 +959,8 @@ def addTCPNtuples(process,runType):
                                             GenJetCollection = cms.InputTag("slimmedGenJets"),
                                             genEventInfo = cms.InputTag("generator"),
                                             pileupSummaryInfo = cms.InputTag("slimmedAddPileupInfo"),
-                                            puDataFileName = cms.FileInPath("BoostedDiTau/MiniAODSkimmer/data/PileupHistogram-goldenJSON-13tev-2017-69200ub-99bins.root"),
-                                            puMCFileName = cms.FileInPath("BoostedDiTau/MiniAODSkimmer/data/PileupMC2017.root")
+                                            puDataFileName = cms.FileInPath("PNet_Skimmer/data/PileupHistogram-goldenJSON-13tev-2017-69200ub-99bins.root"),
+                                            puMCFileName = cms.FileInPath("PNet_Skimmer/data/PileupMC2017.root")
         )
         process.tcpGenNtupleMaker = cms.Path(process.tcpGenNtuples)
 

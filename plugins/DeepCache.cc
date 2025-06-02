@@ -6,7 +6,7 @@
  * \author Devin Taylor, UC Davis
  */
 
-#include "BoostedDiTau/MiniAODSkimmer/interface/DeepCache.h"
+#include "PNet_Skimmer/interface/DeepCache.h"
 
 DeepCache::DeepCache(const std::map<std::string, std::string>& graph_names, bool mem_mapped) {
   for (const auto& graph_entry : graph_names) {
