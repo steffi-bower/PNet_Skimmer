@@ -1,4 +1,4 @@
-#include "BoostedDiTau/MiniAODSkimmer/plugins/TCPNtuples.h"
+#include "PNet_Skimmer/plugins/TCPNtuples.h"
 #include "RecoVertex/VertexTools/interface/VertexDistanceXY.h"
 #include "RecoVertex/VertexTools/interface/VertexDistance3D.h"
 

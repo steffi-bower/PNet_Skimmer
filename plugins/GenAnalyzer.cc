@@ -19,7 +19,7 @@
 #include "SimDataFormats/PileupSummaryInfo/interface/PileupSummaryInfo.h"
 
 #include "PhysicsTools/Utilities/interface/LumiReWeighting.h"
-#include "BoostedDiTau/MiniAODSkimmer/interface/GenParticleInfoDS.h"
+#include "PNet_Skimmer/interface/GenParticleInfoDS.h"
 
 #include "TH1D.h"
 #include "TH2D.h"

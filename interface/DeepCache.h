@@ -2,8 +2,8 @@
 /*#ifndef DevTools_Ntuplizer_DeepCache_h
 #define DevTools_Ntuplizer_DeepCache_h
 */
-#ifndef BoostedDiTau_MiniAODSkimmer_DeepCache_h
-#define BoostedDiTau_MiniAODSkimmer_DeepCache_h
+#ifndef PNet_Skimmer_DeepCache_h
+#define PNet_Skimmer_DeepCache_h
 /*
  * \class DeepCache
  *

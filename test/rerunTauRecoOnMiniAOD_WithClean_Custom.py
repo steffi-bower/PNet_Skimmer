@@ -139,7 +139,7 @@ else:
 
 
 
-import BoostedDiTau.MiniAODSkimmer.adaptToRunAtMiniAODCustom as tauAtMiniToolsCustom
+import PNet_Skimmer.adaptToRunAtMiniAODCustom as tauAtMiniToolsCustom
 
 #####
 print ('Step : 1 - Added Paths for RecoCleaned ')

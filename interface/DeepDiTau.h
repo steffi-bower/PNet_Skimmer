@@ -1,7 +1,7 @@
 //#ifndef DevTools_Ntuplizer_DeepDiTau_h
 //#define DevTools_Ntuplizer_DeepDiTau_h
-#ifndef BoostedDiTau_MiniAODSkimmer_DeepDiTau_h
-#define BoostedDiTau_MiniAODSkimmer_DeepDiTau_h
+#ifndef PNet_Skimmer_DeepDiTau_h
+#define PNet_Skimmer_DeepDiTau_h
 
 /*
  * \class DeepDiTau
@@ -20,7 +20,7 @@
 #include "FWCore/ParameterSet/interface/ConfigurationDescriptions.h"
 #include "FWCore/ParameterSet/interface/ParameterSetDescription.h"
 #include "DataFormats/Common/interface/AssociationMap.h"
-#include "BoostedDiTau/MiniAODSkimmer/interface/DeepCache.h"
+#include "PNet_Skimmer/interface/DeepCache.h"
 #include "DataFormats/PatCandidates/interface/Jet.h"
 #include "DataFormats/PatCandidates/interface/PackedCandidate.h"
 

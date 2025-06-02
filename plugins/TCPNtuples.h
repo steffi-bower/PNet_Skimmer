@@ -1,5 +1,5 @@
-#ifndef MiniAODSkimmer_MiniAODCleaner_TCPNtuples_h
-#define MiniAODSkimmer_MiniAODCleaner_TCPNtuples_h
+#ifndef PNet_Skimmer_MiniAODCleaner_TCPNtuples_h
+#define PNet_Skimmer_MiniAODCleaner_TCPNtuples_h
 
 // system include files
 #include <memory>
@@ -23,10 +23,10 @@
 #include "CommonTools/Egamma/interface/EffectiveAreas.h"
 #include "DataFormats/PatCandidates/interface/Tau.h"
 
-#include "BoostedDiTau/MiniAODSkimmer/interface/JetInfoDS.h"
-#include "BoostedDiTau/MiniAODSkimmer/interface/MuonInfoDS.h"
-#include "BoostedDiTau/MiniAODSkimmer/interface/ElectronInfoDS.h"
-#include "BoostedDiTau/MiniAODSkimmer/interface/TauInfoDS.h"
+#include "PNet_Skimmer/interface/JetInfoDS.h"
+#include "PNet_Skimmer/interface/MuonInfoDS.h"
+#include "PNet_Skimmer/interface/ElectronInfoDS.h"
+#include "PNet_Skimmer/interface/TauInfoDS.h"
 #include "DataFormats/Common/interface/TriggerResults.h"
 #include "FWCore/Common/interface/TriggerNames.h"
 

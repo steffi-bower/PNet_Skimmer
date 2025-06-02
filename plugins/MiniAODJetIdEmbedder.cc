@@ -41,7 +41,7 @@
 #include <fstream>
 #include <algorithm>
 #include <numeric>
-#include "BoostedDiTau/MiniAODSkimmer/interface/json.hpp"
+#include "PNet_Skimmer/interface/json.hpp"
 #include "TrackingTools/IPTools/interface/IPTools.h"
 
 #include "DataFormats/VertexReco/interface/VertexFwd.h"
